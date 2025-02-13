@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("C:\\Users\\konda\\Downloads\\a.jpg");
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  margin:0 0;
+}
+#username,#button,#password{
+  text-align: center;
+width:200px;
+height: 40px;
+font-size: 16px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  margin: 50px;
+}
+
+.equipment {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

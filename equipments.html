@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipments - Smart Agri Rent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Agri Rent</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="equipments">
+        <h2>Available Equipments</h2>
+        <div class="equipment" onclick="showDetails('Tractor', 'A','15km/l', '3000/day', '20th Feb')">
+            <img src="C:\\Users\\konda\\Downloads\\tractor.jpg" width="400" height="400" alt="Tractor">
+            <p>Tractor</p>
+        </div>
+        <div class="equipment" onclick="showDetails('Plough', 'N/A', '2500/day', '25th Feb')">
+            <img src="C:\\Users\\konda\\Downloads\\plough.jpg" height="400" width="400" alt="Plough">
+            <p>Plough</p>
+
+        </div>
+        <br>
+        <br>
+        <div class="equipment" onclick="showDetails('Sprayer', 'A','20km/l', '1000/day', '30th Feb')">
+            <img src="C:\\Users\\konda\\Downloads\\sprayer.jpg" alt="Transplanter" height="400" width="400">
+            <p>Sprayer</p>
+        </div>
+        <div class="equipment" onclick="showDetails('Cultivator', 'N/A', '4500/day', '15th Feb')">
+            <img src="C:\\Users\\konda\\Downloads\\cultivator.jpg" width="400" height="400" alt="Cultivator">
+            <p>Cultivator</p>
+        </div>
+        <br>
+        <br>
+        <div class="equipment" onclick="showDetails('Harvester', 'A','50km/l', '10000/day', '25th Feb')">
+            <img src="C:\\Users\\konda\\Downloads\\combine1.jpg" alt="Combine Harvester" width="400" height="400">
+            <p>Combine Harvester</p>
+        </div>
+        <div class="equipment" onclick="showDetails('Combine Harvester','N/A' ,'50km/l', '2000/day', '10th Feb')">
+            <img src="C:\\Users\\konda\\Downloads\\backhoe.jpg" alt="Backhoe" width="400" height="400">
+            <p>Backhoe</p>
+        </div>
+    </section>
+
+    <div id="equipment-details" class="hidden">
+        <h3 id="equip-name"></h3>
+        <p><strong>Availability:</strong> <span id="equip-avail"></span></p>
+        <p><strong>Milage:</strong> <span id="equip-mileage"></span></p>
+        <p><strong>Per Day Rent:</strong> <span id="equip-rent"></span></p>
+        <p><strong>Return Date:</strong> <span id="equip-return"></span></p>
+        <button onclick="bookEquipment()">Book</button>
+    </div>
+
+    <div id="qr-code" class="hidden">
+        <h3>Scan to Pay</h3>
+        <img id="qr-img" src=""C:\\Users\\konda\\Downloads\\qr.jpg"" alt="QR Code">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
